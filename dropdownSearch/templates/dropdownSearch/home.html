@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+Home
+{% endblock title %}
+
+{% block content %}
+
+<div>
+    {% for object in object_list  %}
+    <h1>{{object.title}}</h1>
+    <h6>{{object.content}}</h6>
+    <h6>{{object.status}}</h6>
+    <hr>
+    {% endfor %}
+    
+</div>
+    
+{% endblock content %}
+    
